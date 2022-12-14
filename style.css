@@ -1,0 +1,156 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(images/bg-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  display: grid;
+  place-items: center;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.header span:hover {
+  color: #44BBCA;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.detail>input {
+  border-radius: 40px;
+  padding: 1rem;
+  border: none;
+  font-size: 1rem;
+  background-color: #323233;
+}
+
+.button {
+  background: #44BBCA;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+}
+.button:hover {
+  background: #44BBCA;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+#grid {
+  margin-left: auto;
+}
+
+.logo {
+  width: 3rem;
+  border-radius: 100%;
+}
+
+.nam {
+  margin: 0rem 1rem;
+  cursor: pointer;
+}
+
+.hidden-img {
+  display: none;
+  border-radius: 15px;
+  height: 35rem;
+}
+
+.gender {
+  margin: 1rem 3rem;
+  font-size: 1.5rem;
+}
+
+main {
+  display: grid;
+  place-content: center;
+}
+
+.main {
+  padding: 2rem;
+  border-radius: 10px;
+  height: fit-content;
+
+}
+
+input[type=button] {
+  width: 40%;
+  height: 3rem;
+  padding: 0rem;
+}
+
+@media (min-width:425px) {
+  html {
+    font-size: 89%;
+  }
+}
+
+@media (min-width:768px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media (min-width:1024px) {
+  html {
+    font-size: 89%;
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hidden-img {
+    display: block;
+  }
+
+  body {
+    background-color: #1e1e1e;
+    background-image: none;
+  }
+
+}
+
+@media (min-width:1452px) {
+  html {
+    font-size: 100%;
+  }
+
+  .header {
+    font-size: 1.8rem;
+  }
+
+  .logo {
+    width: 5rem;
+  }
+}
+@media (min-width:2100px) {
+    html{
+      font-size: 120%;
+    }
+  }

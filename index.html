@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <title>Train_Yourself</title>
+</head>
+
+<body>
+
+  <nav>
+    <div class="header">
+
+      <img class="logo" src="images/logo.png" alt="logo" />
+      <span class="nam" id="home">home</span>
+      <span class="nam">about us</span>
+      <span class="nam">fitness-calculator</span>
+      <span class="nam" id="grid">contact us</span>
+    </div>
+  </nav>
+  <main>
+    <div style="display: grid; place-items: center;">
+      <img class="hidden-img" src="images/logo2.jpg" alt="">
+    </div>
+    <div class="main">
+      <h1 style>join the best gym of delhi now</h1>
+      <form action="action.php" class="detail">
+        <input type="text" placeholder="Name " />
+        <input type="number" placeholder="Age" />
+
+        <input type="text" placeholder="Locality" />
+        <input type="text" placeholder="abc123@gmail.com" />
+        <div>
+          <label for="id1">
+            <span class="gender"><input style="width: 2rem; height: 2rem;" type="radio" value="male" id="id1"
+                name="gender"> male</span></label>
+          <label for="id2"> <span class="gender"><input style="width: 2rem; height: 2rem; background-color: #323233;" type="radio" value="female"
+                id="id2" name="gender"> female
+            </span></label>
+        </div>
+        <input type="button" class="button" value="submit" />
+      </form>
+    </div>
+  </main>
+
+</body>
+
+</html>
